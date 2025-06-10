@@ -1,3 +1,5 @@
+![screencapture-kzmii7selwtlv4i8kr4e-lite-vusercontent-net-2025-06-10-16_33_44](https://github.com/user-attachments/assets/56997030-31a1-43c6-a447-3c55680e5388)
+
 # IRCTC API - Railway Management System
 
 A railway management system API similar to IRCTC, where users can check train availability, book seats, and manage bookings.
@@ -36,7 +38,7 @@ A railway management system API similar to IRCTC, where users can check train av
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-DATABASE_URL=postgresql://username:password@localhost:5432/irctc_db
+DATABASE_URL=your_database_url
 JWT_SECRET=your_jwt_secret_key
 ADMIN_API_KEY=your_admin_api_key
 ```
@@ -214,9 +216,3 @@ To ensure consistent and secure seat booking, the API handles race conditions us
 1. **Database transactions** to ensure atomicity.
 2. **Row-level locking** using `FOR UPDATE` to prevent concurrent updates.
 3. **Seat validation within transactions** to avoid overbooking.
-
----
-
-## License
-
-This project is licensed under the **MIT License**.
